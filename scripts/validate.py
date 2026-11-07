@@ -96,7 +96,12 @@ def validate(root: Path = ROOT) -> list[Path]:
         if path.suffix != ".md":
             continue
         content = path.read_text(encoding="utf-8")
-        for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", content):
+        links = re.findall(
+            r"""\[[^\]]*\]\(\s*(?:<([^>\n]+)>|([^\s)]+))(?:\s+(?:"[^"]*"|'[^']*'|\([^)]*\)))?\s*\)""",
+            content,
+        )
+        for bracketed, bare in links:
+            target = bracketed or bare
             if target.startswith(("https://", "http://", "mailto:", "#")):
                 continue
             destination = (path.parent / target.split("#", 1)[0]).resolve()

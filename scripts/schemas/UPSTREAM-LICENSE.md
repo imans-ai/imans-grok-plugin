@@ -4,8 +4,8 @@ Agent Plugins uses separate licenses for specification and documentation materia
 
 Unless a file contains a different license notice:
 
-- Specification text, documentation, examples, authored images, diagrams, and other documentation assets are licensed under the [Creative Commons Attribution 4.0 International License](LICENSES/CC-BY-4.0.txt).
-- Schemas, source code, scripts, and other software material are licensed under the [Apache License 2.0](LICENSES/Apache-2.0.txt).
+- Specification text, documentation, examples, authored images, diagrams, and other documentation assets are licensed under the [Creative Commons Attribution 4.0 International License](https://github.com/agentplugins/agent-plugins-spec/blob/main/LICENSES/CC-BY-4.0.txt).
+- Schemas, source code, scripts, and other software material are licensed under the [Apache License 2.0](https://github.com/agentplugins/agent-plugins-spec/blob/main/LICENSES/Apache-2.0.txt).
 
 Third-party material remains subject to its original license and attribution requirements.
 

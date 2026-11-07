@@ -10,6 +10,8 @@ material under Apache-2.0, as described by the upstream license notice in
 `UPSTREAM-LICENSE.md` and
 https://github.com/agentplugins/agent-plugins-spec/blob/main/LICENSE.md.
 The full Apache-2.0 license is included at the repository root.
+Relative links in the copied upstream license notice were adapted to upstream
+URLs so they also resolve from this repository.
 
 These files are used by maintainers for offline package validation. The plugin
 does not download schemas or execute validation scripts when installed.

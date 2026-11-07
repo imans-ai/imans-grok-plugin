@@ -90,8 +90,8 @@ Imans policy. The platform's terms presented in Imans govern service use.
 
 ## Development
 
-The plugin needs no Python or Node installation at runtime. Maintainers can
-validate and package it with Python 3.11+:
+The plugin needs no Python or Node installation at runtime. From a source
+checkout, maintainers can validate and package it with Python 3.11+:
 
 ```sh
 python -m pip install -r requirements-dev.txt
