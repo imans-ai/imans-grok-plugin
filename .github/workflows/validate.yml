@@ -1,0 +1,26 @@
+name: Validate plugin
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: sh scripts/preflight.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: imans-grok-plugin
+          path: dist/*
+          if-no-files-found: error

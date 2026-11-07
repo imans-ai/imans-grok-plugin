@@ -1,0 +1,11 @@
+{
+  "name": "imans",
+  "version": "1.0.0",
+  "description": "Connect Grok Bot to Imans business data and supported actions through the full Imans MCP server, with workspace permissions and approvals.",
+  "author": { "name": "Imans AI", "url": "https://imans.ai" },
+  "homepage": "https://imans.ai",
+  "repository": "https://github.com/imans-ai/imans-grok-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["imans", "business", "sales", "inventory", "finance", "operations", "mcp", "grok-bot"],
+  "logo": "assets/logo.svg"
+}
