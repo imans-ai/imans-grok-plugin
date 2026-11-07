@@ -1,0 +1,12 @@
+Imans for Grok Bot
+Copyright 2026 Imans Tecnologia Ltda.
+
+The Imans name and logo are trademarks of Imans. Grok Bot and Cursor names
+belong to their respective owners. Publishing this package does not imply
+marketplace approval or endorsement by those owners.
+
+scripts/schemas contains unmodified Agent Plugins 1.0.0 JSON Schemas from
+https://agent-plugins.org/schemas/1.0.0/ and the Agent Plugins project:
+https://github.com/agentplugins/agent-plugins-spec
+These validation schemas are attributed to the Agent Plugins contributors.
+See scripts/schemas/README.md and the included upstream license.
