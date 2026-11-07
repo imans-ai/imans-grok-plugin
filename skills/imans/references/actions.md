@@ -8,7 +8,9 @@ and revision, and execute only the requested effect.
 For task creation and changes, use the matching preview and action tools.
 Generate one idempotency key per intended mutation and reuse it for retries
 of that same payload. Follow the returned operation ID with its status tool
-after an ambiguous result; creating a new key could duplicate the effect.
+after an ambiguous result. If a timeout arrives before any operation ID,
+repeat the same action with the original key and identical payload to recover
+its receipt, then follow its status. Creating a new key could duplicate the effect.
 If the user changes the intent, preview the new intent as a new operation.
 
 For process drafts, preserve `expected_revision`, report structural findings
